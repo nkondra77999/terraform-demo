@@ -141,7 +141,7 @@ resource "aws_network_acl" "lms-api-nacl" {
   }
 
   tags = {
-    Name = "lms-web-nacl"
+    Name = "lms-api-nacl"
   }
 }
 
@@ -168,6 +168,6 @@ resource "aws_network_acl" "lms-db-nacl" {
   }
 
   tags = {
-    Name = "lms-web-nacl"
+    Name = "lms-db-nacl"
   }
 }
