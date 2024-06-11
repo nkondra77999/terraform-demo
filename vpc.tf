@@ -227,7 +227,7 @@ resource "aws_vpc_security_group_egress_rule" "lms-web-sg-egress" {
 
 #create lms-api security group
 resource "aws_security_group" "lms-api-sg" {
-  name        = "lms-web-sg"
+  name        = "lms-api-sg"
   description = "Allow SSH & Node js traffic"
   vpc_id      = aws_vpc.lms-vpc.id
 
